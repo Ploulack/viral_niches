@@ -45,3 +45,4 @@ vir_cov_dist <- covar_virbact %>%
 			left_join(dist_vir, by = c("v1" = "vir_A", "v2" = "vir_B"))
 	})
 
+vir_cov_dist %>% write_csv("export/vir_cov_dist")
